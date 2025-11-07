@@ -1,9 +1,10 @@
 ## static/
+
 ## Description
 Ce dossier contient les fichiers statiques de l'application. Ces fichiers définissent l'apparence et le style visuel de la calculatrice.
 
 ## Contenu
-style.css
+**style.css**
 - Feuille de style principale de la calculatrice
 - Définit les couleurs, la mise en page et le style des boutons
 - Inclut les effets de survol et les animations
