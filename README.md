@@ -56,8 +56,8 @@ Les tests vérifient que les opérations mathématiques fonctionnent correctemen
 
 ## flux de contribution
 1. **Structure des branches**
-   main - Branche principale avec le code stable
-   feature/nom - Nouvelles fonctionnalités
+   - main - Branche principale avec le code stable
+   - feature/nom - Nouvelles fonctionnalités
 2. **Processus**
    1. La création d'une branche, la modification d'un fichier, le commit et pousser sur la        branche:
       git checkout -b feature/nom 
