@@ -11,7 +11,7 @@ def add(a,b):
 
 def subtract(a,b):
     # Soustrait deux nombres et retourne le résultat
-    return b - a
+    return a - b
 
 def multiply(a,b):
     # Multiplie deux nombres et retourne le résultat
