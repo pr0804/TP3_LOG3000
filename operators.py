@@ -19,4 +19,4 @@ def multiply(a,b):
 
 def divide(a,b):
     # Divise deux nombres et retourne le résultat
-    return a // b
+    return a / b
