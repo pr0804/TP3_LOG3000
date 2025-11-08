@@ -74,7 +74,6 @@ def test_operator_buttons(client):
 def test_operator_buttons_text(client):
     """
     Vérifie que tous les boutons d'opérateurs affichent leur symbole.
-    BUG ATTENDU: Certains opérateurs peuvent ne pas avoir de texte visible.
     """
     response = client.get("/")
     html = response.data.decode("utf-8")
