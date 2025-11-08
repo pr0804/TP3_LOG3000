@@ -17,14 +17,14 @@ Installer pytest:
 python -m pip install pytest
 
 Lancer tous les tests:
-pytest tests/
+python -m pytest tests/
 
 Avec plus de détails:
-pytest tests/ -v
+python -m pytest tests/ -v
 
 Un fichier spécifique:
-- pytest tests/test_operators.py
-- pytest tests/test_app.py
+- python -m pytest tests/test_operators.py
+- python -m pytest tests/test_app.py
 
 ## Interpréter les résultats
 - PASSED = Le test a réussi, la fonction fonctionne correctement
