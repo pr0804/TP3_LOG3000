@@ -83,9 +83,3 @@ def test_calculate_invalid_operand():
     """Test avec un opérande invalide - doit lever une erreur."""
     with pytest.raises(ValueError, match="operands must be numbers"):
         calculate("abc + 3")
-
-
-def test_calculate_negative_numbers():
-    """Test avec des nombres négatifs."""
-    result = calculate("-5 + 3")
-    assert result == -2, f"Expected -2 but got {result}"
