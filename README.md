@@ -53,6 +53,7 @@ Les tests vérifient que les opérations mathématiques fonctionnent correctemen
 2.  **Tests spécifiques**
    - python -m pytest tests/test_operators.py;
    - python -m pytest tests/test_app.py
+   - python -m pytest tests/test_html.py
 3. **Voir plus de détails**
    python -m pytest tests/ -v
 
