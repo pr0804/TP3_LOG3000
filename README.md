@@ -47,12 +47,14 @@ Avant de commencer, il faut avoir installé :
    *Note*: Une seule opération à la fois est supportée.
    
 ## Tests
-Les tests vérifient que les opérations mathématiques fonctionnent correctement et que les erreurs sont bien gérées.
+Les tests vérifient que les opérations mathématiques fonctionnent correctement, vérifient la validation des expressions et que les erreurs sont bien gérées.
 1. **Lancer les tests**
-   pytest tests/
+   python -m pytest tests/
 2.  **Tests spécifiques**
-   - pytest tests/test_operators.py;
-   - pytest tests/test_app.py
+   - python -m pytest tests/test_operators.py;
+   - python -m pytest tests/test_app.py
+3. **Voir plus de détails**
+   python -m pytest tests/ -v
 
 ## flux de contribution
 1. **Structure des branches**
@@ -67,11 +69,6 @@ Les tests vérifient que les opérations mathématiques fonctionnent correctemen
    2. Ouvrir une Pull Request sur GitHub
    3. Faire réviser par un autre membre
    4. Fusionner une fois approuvé
-3. **Conventions de commit**
-   - feat: Nouvelle fonctionnalité;
-   - fix: Correction de bogue;
-   - test: Tests;
-   - refactor: Refactorisation;
 
 ## Technologies utilisées
 - Flask (Python) - Framework web;
