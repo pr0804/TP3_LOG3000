@@ -12,19 +12,24 @@ test_app.py
 - Tests pour la fonction calculate() de app.py
 - 16 tests qui vérifient le parsing des expressions et la gestion d'erreurs
 
+test_html.py
+- Tests pour l'interface HTML de la calculatrice
+- 9 tests qui vérifient l'affichage correct des boutons et leur fonctionnement
+- Détecte les erreurs d'affichage (boutons vides, mauvais texte, etc.)
+
 ## Lancer les tests
 Installer pytest:
-python -m pip install pytest
+py -m pip install pytest
 
 Lancer tous les tests:
-python -m pytest tests/
+py -m pytest tests/
 
 Avec plus de détails:
-python -m pytest tests/ -v
+py -m pytest tests/ -v
 
 Un fichier spécifique:
-- python -m pytest tests/test_operators.py
-- python -m pytest tests/test_app.py
+- py -m pytest tests/test_operators.py
+- py -m pytest tests/test_app.py
 
 ## Interpréter les résultats
 - PASSED = Le test a réussi, la fonction fonctionne correctement
