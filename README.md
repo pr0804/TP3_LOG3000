@@ -64,10 +64,11 @@ Les tests vérifient que les opérations mathématiques fonctionnent correctemen
    - fix/nom - branche pour fixer les bogues
 2. **Processus**
    1. La création d'une branche, la modification d'un fichier, le commit et pousser sur la        branche:
-      - git checkout -b feature/nom
+      - git branch fix/html
+      - checkout fix/html
       - git add fichiers
-      - git commit -m "feat: description de l'ajout"
-      - git push origin feature/nom
+      - git commit -m "fix: description de la correction effectuée"
+      - git push origin fix/html
    2. Ouvrir une Pull Request sur GitHub
    3. Faire réviser par un autre membre
    4. Fusionner une fois approuvé
