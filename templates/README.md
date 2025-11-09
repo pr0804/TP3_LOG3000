@@ -12,12 +12,14 @@ Ce dossier contient le fichier HTML de l'interface utilisateur. Flask utilise Ji
 
 ## Fonctionnement
 Flask rend les templates avec `render_template()` :
+```python
 return render_template('index.html', result=result)
-
+```
 
 Les variables Python sont accessibles dans le HTML avec la syntaxe Jinja2 :
+```html
 <input type="text" value="{{ result }}">
-
+```
 
 ## Dépendances
 - Flask (système de templates Jinja2)
