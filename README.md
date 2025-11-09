@@ -15,67 +15,68 @@ Dans le cadre du TP3 de LOG3000, on met en pratique les bonnes pratiques de dév
 ## Description du projet
 L'application permet à l'utilisateur d'entrer une expression simple (comme 5 + 3) et d'obtenir le résultat directement dans le navigateur. Si l'expression est invalide ou contient une erreur (division par zéro, format incorrect), un message d'erreur s'affiche.
 Le projet contient:
-- app.py - Serveur Flask et logique principale;
-- operators.py - Fonctions mathématiques (add, subtract, multiply, divide);
-- templates/ - Fichiers HTML pour l'interface;
+- app.py - Serveur Flask et logique principale
+- operators.py - Fonctions mathématiques (add, subtract, multiply, divide)
+- templates/ - Fichiers HTML pour l'interface
 - static/ - Fichier CSS pour le style
 
 ## Prérequis d'installation
 Avant de commencer, il faut avoir installé :
-- Python 3.8 ou version supérieure;
-- pip (gestionnaire de paquets Python);
-- Git;
-- Un navigateur web moderne (Chrome, Firefox, Safari, Edge);
+- Python 3.8 ou version supérieure
+- pip (gestionnaire de paquets Python)
+- Git
+- Un navigateur web moderne (Chrome, Firefox, Safari, Edge)
 
 ## Instructions d’installation et d’exécution
 1. **Cloner le dépôt**
-   - git clone https://github.com/TP3_LOG3000.git; 
-   - cd TP3_LOG3000;
+   - git clone https://github.com/pr0804/TP3_LOG3000.git
+   - cd TP3_LOG3000
 2. **Installer les dépendances**
-   - pip install flask;
-   - pip install pytest;
+   - pip install flask
+   - pip install pytest
 4. **Lancer l'application**
-   - python app.py;
-   - Le serveur démarre sur http://localhost:5000;
+   - python app.py
+   - Le serveur démarre sur http://localhost:5000
 5. **Utiliser la calculatrice**
-   - Ouvrir http://localhost:5000 dans le navigateur;
-   - Cliquer sur les chiffres pour entrer un nombre;
-   - Cliquer sur un opérateur (+, -, *, /);
-   - Entrer le deuxième nombre;
-   - Cliquer sur "=" pour voir le résultat;
-   - Utiliser "C" pour effacer;
+   - Ouvrir http://localhost:5000 dans le navigateur
+   - Cliquer sur les chiffres pour entrer un nombre
+   - Cliquer sur un opérateur (+, -, *, /)
+   - Entrer le deuxième nombre
+   - Cliquer sur "=" pour voir le résultat
+   - Utiliser "C" pour effacer
    *Note*: Une seule opération à la fois est supportée.
    
 ## Tests
-Les tests vérifient que les opérations mathématiques fonctionnent correctement, vérifient la validation des expressions et que les erreurs sont bien gérées.
+Les tests vérifient que les opérations mathématiques fonctionnent correctement, que la validation des expressions est correcte, que l'interface HTML affiche les bons éléments, et que les erreurs sont bien gérées.
 1. **Lancer les tests**
-   python -m pytest tests/
+   py -m pytest tests/
 2.  **Tests spécifiques**
-   - python -m pytest tests/test_operators.py;
-   - python -m pytest tests/test_app.py
-   - python -m pytest tests/test_html.py
+   - py -m pytest tests/test_operators.py;
+   - py -m pytest tests/test_app.py
+   - py -m pytest tests/test_html.py
 3. **Voir plus de détails**
-   python -m pytest tests/ -v
+   py -m pytest tests/ -v
 
 ## flux de contribution
 1. **Structure des branches**
-   - main - Branche principale avec le code stable;
-   - feature/nom - Nouvelles fonctionnalités
+   - main - Branche principale avec le code stable
+   - feature/nom - branche pour les nouvelles fonctionnalités
+   - fix/nom - branche pour fixer les bogues
 2. **Processus**
    1. La création d'une branche, la modification d'un fichier, le commit et pousser sur la        branche:
-      - git checkout -b feature/nom; 
-      - git add fichiers;
-      - git commit -m "feat: description de l'ajout";
-      - git push origin feature/nom; 
+      - git checkout -b feature/nom
+      - git add fichiers
+      - git commit -m "feat: description de l'ajout"
+      - git push origin feature/nom
    2. Ouvrir une Pull Request sur GitHub
    3. Faire réviser par un autre membre
    4. Fusionner une fois approuvé
 
 ## Technologies utilisées
-- Flask (Python) - Framework web;
-- HTML/CSS - Interface utilisateur;
-- pytest - Tests automatisés;
-- Git/GitHub - Gestion de versions;
+- Flask (Python) - Framework web
+- HTML/CSS - Interface utilisateur
+- pytest - Tests automatisés
+- Git/GitHub - Gestion de versions
 
 ## Auteurs
 Projet réalisé dans le cadre du cours LOG3000 à Polytechnique Montréal.
